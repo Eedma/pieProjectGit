@@ -1,0 +1,55 @@
+.collapsible {
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    max-width: 200px;
+    max-height: 10vh;
+    border: none;
+    text-align: middle;
+    outline: none;
+		float: right;
+		background-color: black;
+
+}
+
+.active, .collapsible:hover {
+    text-decoration: underline;
+}
+
+.contenitoreForm {
+    /* padding: 0 18px; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: black;
+		color: white;
+		width: 50vw;
+		position: absolute;
+		right: 0;
+		top: 10vh;
+		z-index: 900;
+}
+
+#bannerform {
+	background-color: black;
+	width: 50vh;
+	height: 10vh;
+
+}
+
+@media screen and (max-width : 480px){
+  .collapsible {
+    width: 50%;
+  }
+
+  .contenitoreForm {
+    width: 100vw;
+  }
+  #bannerform{
+    width: 100vw;
+  }
+
+  #contact-area {
+    width: 100vw;
+  }
+}

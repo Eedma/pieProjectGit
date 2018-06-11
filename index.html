@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+<title>pie in the sky</title>
+
+<link rel="shortcut icon" href="resources/rounds.gif" type="image/x-icon"></link>
+
+<link rel="stylesheet" href="css/home.css" type="text/css">
+<link rel="stylesheet" href="css/menu.css" type="text/css">
+<link rel="stylesheet" href="css/fontsheet.css" type="text/css">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+</script>
+
+
+</head>
+
+<body>
+  <!-- here's the audio -->
+  <audio id="sound" loop>
+    <source src="fx/fx.ogg" type="audio/ogg; codecs=vorbis">
+    <source src="fx/fx.mp3" type="audio/mpeg">
+    <p>Your browser doesn't support HTML5 audio. Here is a <a href="../fx/fx.ogg">link to the audio</a> instead.</p>
+  </audio>
+  <!-- modal start here -->
+  <div id="modal">
+
+
+    <div id="modalcontent">
+      <p id="intro"></p>
+    </div>
+    <div id="button"><p>I'm cool with it</p></div>
+  </div>
+  <!-- modal end here-->
+	<canvas id="starfield"></canvas>
+  <!-- The overlay -->
+    <div id="myNav" class="menu">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="menu-content">
+          <a class="activeLink" href="#">Home sweet home</a>
+          <a href="html/activities.html">Activities</a>
+          <a href="html/testimonials.html">Testimonials</a>
+          <a href="spaceInvaders/index.html" target="_blank">Let's play!</a>
+        </div>
+      </div>
+      <!-- audio controls -->
+      <div class="bar-c">
+        <div id="bar-1" class="bar"></div>
+        <div id="bar-2" class="bar"></div>
+        <div id="bar-3" class="bar"></div>
+        <div id="bar-4" class="bar"></div>
+        <div id="bar-5" class="bar"></div>
+        <div id="bar-6" class="bar"></div>
+      </div>
+      <!-- spazio per tilt -->
+      <div id="space" data-tilt data-tilt-reset="false">
+        <!-- logo inizio -->
+        <div id="ombra"></div>
+		    <div id="logo" onclick="openNav()">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 450">
+            <title>Are you ready?</title>
+            <circle cx="225" cy="225" r="225"/>
+            <text class="a" transform="translate(22.55 243.29)"><tspan class="b">P</tspan><tspan x="36.65" y="0">IE IN THE S</tspan><tspan class="c" x="329.89" y="0">K</tspan><tspan x="365.39" y="0">Y</tspan></text>
+            <text class="d" transform="translate(26.55 243.29)"><tspan class="b">P</tspan><tspan x="36.65" y="0">IE IN THE S</tspan><tspan class="c" x="329.89" y="0">K</tspan><tspan x="365.39" y="0">Y</tspan></text>
+            <text class="e" transform="translate(24.55 243.29)"><tspan class="b">P</tspan><tspan x="36.65" y="0">IE IN THE S</tspan><tspan class="c" x="329.89" y="0">K</tspan><tspan x="365.39" y="0">Y</tspan></text>
+          </svg>
+        </div>
+      </div>
+<!-- script per modale -->
+<script>
+
+window.onload = function () {
+  document.getElementById('button').onclick = function () {
+    document.getElementById('modal').style.display = "none"
+  };
+};
+</script>
+
+<!-- script spegni audio -->
+<script>
+var x = document.getElementById("sound");
+
+function playAudio() {
+    x.play();
+}
+
+function shutUp() {
+  x.pause();
+}
+</script>
+
+<!-- typing script della modale con cdn e inizializzazione-->
+<script src="https://cdn.jsdelivr.net/npm/typeit@5.10.1/dist/typeit.min.js"></script>
+
+<script>
+new TypeIt('#intro', {
+  strings: ['Pie in the sky is a bizzare, unlikely and insane festival.', 'You\'ll have the chance to reach the natural satellite of our planet, to explore it and try to survive in adverse conditions.', 'But don\'t make yourself too comfortable, adventure is just behind the next crater!', 'The organization declines all responsibility in case of damage of any nature, impairment or death included.'],
+  speed: 50,
+  autoStart: false
+});
+document.getElementById("intro").style.fontFamily = "Lekton,monotype";
+</script>
+
+
+<script>
+//scripting per il menu
+/* Open */
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+/* Close */
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+</script>
+
+<!-- script per canvas -->
+<script src="js/starfield.js"></script>
+<!-- audio 2.0 -->
+<script>
+var clicked = true;
+var x = document.getElementById("sound");
+
+$(".bar-c").click( function() {
+  if (clicked) {
+    $(".bar").addClass("Anim");
+    x.play();
+    clicked = false;
+  } else {
+    $(".bar").removeClass("Anim");
+    x.pause();
+    clicked = true;
+  }
+});
+</script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+</body>
+</html>

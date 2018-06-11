@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Lekton|Montserrat:900');
+
+h1, h2, h3, h4, h5, h6, p, a {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.menu a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: #1c3149;
+  text-align: center;
+  margin: auto;
+  line-height: 5rem;
+}
+
+.menu .activeLink {
+  text-decoration: line-through;
+}
+
+/* index */
+#modal p, #button p{
+  font-family: 'Lekton', monospace;
+  font-size: 1.3rem;
+}
+
+/* activities */
+.descrizione h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+}
+
+.descrizione p {
+  font-family: 'Lekton';
+  font-size: 1.2rem;
+
+}
+
+/* testimonials */
+.box__text-inner {
+  font-size: 3rem;
+}
+
+
+
+@media screen and (max-width : 767px){
+  .menu a {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+  .menu .closebtn {
+      font-size: 40px;
+      top: 2rem;
+      right: 0; left: 0;
+  }
+
+/* index */
+#modal p, #button p {
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+
+/* activities */
+  .descrizione h2 {
+    font-size: 2rem;
+  }
+
+  .descrizione p {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+
+  /* testimonials */
+.box__text-inner {
+  font-size: 2rem;
+}
+
+.box__title-inner{
+  font-size: 2rem;
+}
+
+}
