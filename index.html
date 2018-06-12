@@ -99,12 +99,20 @@ function shutUp() {
 <script src="https://cdn.jsdelivr.net/npm/typeit@5.10.1/dist/typeit.min.js"></script>
 
 <script>
-new TypeIt('#intro', {
-  strings: ['Pie in the sky is a bizzare, unlikely and insane festival.', 'You\'ll have the chance to reach the natural satellite of our planet, to explore it and try to survive in adverse conditions.', 'But don\'t make yourself too comfortable, adventure is just behind the next crater!', 'The organization declines all responsibility in case of damage of any nature, impairment or death included.'],
-  speed: 50,
-  autoStart: false
-});
-document.getElementById("intro").style.fontFamily = "Lekton,monotype";
+ if(sessionStorage.executed != 1) {
+     new TypeIt('#intro', {
+	 strings: ['Pie in the sky is a bizzare, unlikely and insane festival.',
+		   'You\'ll have the chance to reach the natural satellite of our planet, to explore it and try to survive in adverse conditions.',
+		   'But don\'t make yourself too comfortable, adventure is just behind the next crater!',
+		   'The organization declines all responsibility in case of damage of any nature, impairment or death included.'],
+	 speed: 50,
+	 autoStart: false
+     });
+     document.getElementById("intro").style.fontFamily = "Lekton,monotype";
+ } else {
+     document.getElementById('modal').style.display = "none"
+ }
+ sessionStorage.executed = 1;
 </script>
 
 
