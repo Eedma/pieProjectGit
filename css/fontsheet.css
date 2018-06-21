@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   font-family: 'Montserrat', sans-serif;
   font-size: 5rem;
   text-transform: uppercase;
-  color: #1c3149;
+  color: #f1f1f1;
   text-align: center;
   margin: auto;
   line-height: 5rem;
@@ -18,7 +18,12 @@ h1, h2, h3, h4, h5, h6, p, a {
 .menu .activeLink {
   text-decoration: line-through;
 }
-
+.menu #credits a{
+  font-size: 1em;
+}
+.menu a:hover, .menu a:focus {
+    color: #1c3149;
+}
 /* index */
 #modal p, #button p{
   font-family: 'Lekton', monospace;

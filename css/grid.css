@@ -300,9 +300,9 @@ a:focus {
 	.grid {
 		display: grid;
 		align-items: center;
-		/* padding: 6rem 3rem 15rem 3rem; */
+		padding: 3rem 3rem 3rem 3rem;
 		grid-row-gap: 2rem;
-		grid-template-columns: repeat(3,calc(100% / 3));
+		/* grid-template-columns: repeat(3,calc(100% / 3)); */
 	}
 	.grid__item {
 		margin: 0;

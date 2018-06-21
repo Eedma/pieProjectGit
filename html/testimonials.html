@@ -1,18 +1,18 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>testimonials</title>
-<link rel="stylesheet" type="text/css" href="../css/formstyle.css" />
-<link rel="stylesheet" type="text/css" href="../css/testimonials.css"/>
-<link rel="stylesheet" type="text/css" href="../css/grid.css" />
-<link rel="stylesheet" type="text/css" href="../css/menu.css" />
-<link rel="stylesheet" type="text/css" href="../css/fontsheet.css" />
-<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+	<title>Our testimonials | Pie in the sky</title>
+	<meta name="description" content="A few tech guys endorsed us! You can trust them... maybe">
+	<meta name="keywords" content="pie in the sky festival science scify moon space testimonials endorser">
+	<link rel="stylesheet" type="text/css" href="../css/grid.css" />
+	<link rel="stylesheet" type="text/css" href="../css/menu.css" />
+	<link rel="stylesheet" type="text/css" href="../css/fontsheet.css" />
+	<link rel="shortcut icon" href="../imgs/fav/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../imgs/fav/favicon.ico" type="image/x-icon">
+	<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 </head>
-
 <body>
 	<div id="myNav" class="menu">
 	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -20,43 +20,18 @@
 	    <a href="../index.html">Home sweet home</a>
 	    <a href="../html/activities.html">Activities</a>
 	    <a class="activeLink" href="#">Testimonials</a>
-	    <a href="../spaceInvaders/index.html" target="_blank">Let's play!</a>
+			<a href="../blog/">Blog</a>
+	    <a id="sI" href="../spaceInvaders/index.html" target="_blank">Space invaders</a>
 	  </div>
+		<div id="credits">
+			<a href="../html/credits.html" target="_blank">credits</a>
+		</div>
 	</div>
-
-
-
-
 	<!--menu visible-->
 	<div id="header">
 		<div id="openNav" onclick="openNav()"></div>
-			<div class="collapsible">Leave us a review!</div>
-				<div class="contenitoreForm">
-					<div id="contact-area">
-						<form method="post" action="contactengine.php" id="bodyform" id="pform">
-
-						<label for="Name">Name:</label>
-						<input type="text" name="Name" id="Name" />
-
-						<label for="Email">Email:</label>
-						<input type="text" name="Email" id="Email" />
-
-						<label for="Message">Message:</label><br />
-						<textarea name="Message" rows="20" cols="20" id="Message"></textarea>
-
-						<label for="photo"> Upload your photo:</label>
-						<input type="file" name="photo" id="idphoto"/>
-
-						<input type="submit" name="submit" value="Submit" class="submit-button" />
-						</form>
-
-					<div style="clear: both;"></div>
-				</div>
-			</div>
 	</div>
-
 	<!-- end of menu -->
-
 <!-- codrops cards -->
 <main>
 <div class="content">
@@ -70,7 +45,6 @@
 				<!-- <div class="box__deco">&#9818;</div>-->
 			</div>
 		</a>
-
 		<a class="grid__item" href="#preview-2">
 			<div class="box">
 				<div class="box__shadow"></div>
@@ -80,7 +54,6 @@
 				<!--<div class="box__deco box__deco--top">&#10115;</div> -->
 			</div>
 		</a>
-
 		<a class="grid__item" href="#preview-3">
 			<div class="box">
 				<div class="box__shadow"></div>
@@ -90,11 +63,18 @@
 				<!-- <div class="box__deco">&#10032;</div> -->
 			</div>
 		</a>
-
+		<a class="grid__item" href="#preview-4">
+			<div class="box">
+				<div class="box__shadow"></div>
+				<img class="box__img" src="../imgs/testimonials/jeffBezos.jpg" alt="Jeff Bezos portrait"/>
+				<h3 class="box__title"><span class="box__title-inner" data-hover="Bezos">Bezos</span></h3>
+				<h4 class="box__text"><span class="box__text-inner">Jeff</span></h4>
+				<!-- <div class="box__deco">&#9818;</div>-->
+			</div>
+		</a>
 	</div>
 </div>
 	<!-- here starts ovelay cards -->
-
 	<div class="overlay">
 		<div class="overlay__reveal"></div>
 <!-- here goes the content -->
@@ -108,8 +88,6 @@
 	</div>
 	<p class="overlay__content">“Operative systems were a good investments for the past, festivals are the future!”</p>
 </div>
-
-
 <div class="overlay__item" id="preview-2">
 	<div class="box">
 		<div class="box__shadow"></div>
@@ -120,30 +98,33 @@
 	</div>
 	<p class="overlay__content">“I should have thought of this before”</p>
 </div>
-
-
 <div class="overlay__item" id="preview-3">
 	<div class="box">
 		<div class="box__shadow"></div>
 		<img class="box__img box__img--original" src="../imgs/testimonials/markZuck.jpg" alt="Mark Zuckerberg portrait"/>
 		<!-- <h3 class="box__title"><span class="box__title-inner">Elon</span></h3> -->
-		<h4 class="box__text"><span class="box__text-inner">Mark Zuckerberg</span></h4>
+		<h4 class="box__text"><span class="box__text-inner" style="display:ruby;">Mark Zuckerberg</span></h4>
 		<!-- <div class="box__deco">&#10014;</div> -->
 	</div>
 	<p class="overlay__content">“What are you waiting for?! Remember I'm watching you!”</p>
 </div>
+<div class="overlay__item" id="preview-4">
+	<div class="box">
+		<div class="box__shadow"></div>
+		<img class="box__img box__img--original" src="../imgs/testimonials/jeffBezos.jpg" alt="Jeff Bezos Portrait"/>
+		<!-- <h3 class="box__title"><span class="box__title-inner">Elon</span></h3> -->
+		<h4 class="box__text"><span class="box__text-inner">Jeff Bezos</span></h4>
+		<!-- <div class="box__deco">&#10014;</div> -->
+	</div>
+	<p class="overlay__content">“If you subscribe Amazon Prime and order at least 29000$ of goods, you could win a ticket to fly straight to the festival!”</p>
+</div>
 <button class="overlay__close">&times;</button>
 </div>
-
-
-
 </main>
-
 	<!-- collapse form script -->
 	<script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
-
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
@@ -156,24 +137,18 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
-
-
 <script>
-//scripting per il menu
 /* Open */
 function openNav() {
     document.getElementById("myNav").style.height = "100%";
 }
-
 /* Close */
 function closeNav() {
     document.getElementById("myNav").style.height = "0%";
 }
 </script>
-
 <script src="../js/imagesloaded.pkgd.min.js"></script>
 <script src="../js/TweenMax.min.js"></script>
 <script src="../js/codropGridSetup.js"></script>
-
 </body>
 </html>
